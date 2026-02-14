@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+</style>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Huncho’s Pool Hub — A pool lover's heaven</title>
+  <meta name="description" content="Huncho’s Pool Hub — pool cues, balls, gloves and accessories. Online store in Botswana." />
+  <link rel="stylesheet" href="style.css" />
+
+  
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Huncho's Pool Hub">
+        <!-- Inline SVG logo -->
+        <span class="logo-wrap">
+          <!-- Logo SVG -->
+          <svg width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <radialGradient id="g" cx="35%" cy="30%">
+                <stop offset="0%" stop-color="#fff"/>
+                <stop offset="100%" stop-color="#000"/>
+              </radialGradient>
+            </defs>
+            <!-- pool table green circle background -->
+            <rect x="0" y="0" width="64" height="64" rx="10" fill="#0f6b3a"/>
+            <!-- 8 ball -->
+            <circle cx="32" cy="28" r="18" fill="url(#g)"/>
+            <circle cx="32" cy="28" r="7" fill="#fff"/>
+            <text x="32" y="32" font-family="Verdana, Arial, sans-serif" font-size="7" font-weight="700" fill="#000" text-anchor="middle" alignment-baseline="middle">8</text>
+          </svg>
+        </span>
+        <span class="brand-text">Huncho’s Pool Hub</span>
+        <small class="tagline">A pool lover’s heaven</small>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <button id="cart-btn" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Huncho’s Pool Hub</h1>
+          <p class="lead">A pool lover’s heaven — premium cues, balls, and accessories.</p>
+          <div class="cta-row">
+            <a href="shop.html" class="btn">Shop Now</a>
+            <a href="contact.html" class="btn ghost">Contact Us</a>
+          </div>
+          <ul class="quick-info">
+            <li>Online store — we deliver around Botswana</li>
+            <li>WhatsApp orders: <strong>+267 78177347</strong></li>
+            <li>Email: <a href="mailto:solololejwadilwe@gmail.com">solololejwadilwe@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="hero-right">
+          <div class="feature-card">
+            <h3>Featured</h3>
+            <div class="product-inline">
+              <img src="" alt="Pool cue" />
+              <div>
+                <strong>1 piece cue stick</strong>
+                <p class="muted">Only P250</p>
+                <a class="btn small" href="shop.html#product-1">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <h3>Bundles</h3>
+            <p class="muted">Ask for bundle deals on WhatsApp.</p>
+            <a href="shop.html" class="btn small ghost">See all</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container info-section">
+      <h2>Why choose Huncho's?</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h4>Quality gear</h4>
+          <p>Hand-picked cues and balls, built to last.</p>
+        </div>
+        <div class="card">
+          <h4>Fast response</h4>
+          <p>Order via WhatsApp and we’ll confirm within hours.</p>
+        </div>
+        <div class="card">
+          <h4>Trusted seller</h4>
+          <p>Local business — great customer support.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Huncho’s Pool Hub — <span class="muted">A pool lover’s heaven</span></p>
+      <p>Contact: <a href="tel:+26778177347">+267 78177347</a> • <a href="mailto:solololejwadilwe@gmail.com">solololejwadilwe@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <div id="cart-modal" class="cart-modal hidden" aria-hidden="true">
+    <div class="cart-panel">
+      <button id="cart-close" class="close">✕</button>
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <div>Total: <strong id="cart-total">P0</strong></div>
+        <div class="cart-actions">
+          <button id="checkout-wa" class="btn">Checkout (WhatsApp)</button>
+          <button id="clear-cart" class="btn ghost">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

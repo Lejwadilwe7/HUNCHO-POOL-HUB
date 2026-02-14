@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Huncho’s Pool Hub</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo-wrap">
+          <!-- small SVG same as index -->
+          <svg width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><radialGradient id="g2" cx="35%" cy="30%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#000"/></radialGradient></defs>
+            <rect x="0" y="0" width="64" height="64" rx="10" fill="#0f6b3a"/>
+            <circle cx="32" cy="28" r="18" fill="url(#g2)"/>
+            <circle cx="32" cy="28" r="7" fill="#fff"/>
+            <text x="32" y="32" font-family="Verdana, Arial, sans-serif" font-size="7" font-weight="700" fill="#000" text-anchor="middle" alignment-baseline="middle">8</text>
+          </svg>
+        </span>
+        <span class="brand-text">Huncho’s Pool Hub</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.tml.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <button id="cart-btn" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Shop — Catalogue</h1>
+    <p class="muted">All prices in Botswana Pula (P). Click <strong>Buy Now</strong> to order instantly via WhatsApp with your cart summary.</p>
+
+    <section class="products-grid">
+      <!-- product cards -->
+      <article class="product-card" id="product-1" data-id="1" data-name="1 piece cue stick" data-price="250">
+        <img src=" c:\Users\IC\Downloads\1 piece cue.jpg" alt="1 piece cue stick">
+        <h3>1 piece cue stick</h3>
+        <p class="price">P250</p>
+        <div class="product-actions">
+          <button class="btn add-cart">Add to cart</button>
+          <button class="btn ghost buy-now">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" id="product-2" data-id="2" data-name="2 piece cue stick" data-price="400">
+        <img src="c:\Users\IC\Downloads\2 piece.jpg" alt="2 piece cue stick">
+        <h3>2 piece cue stick</h3>
+        <p class="price">P400</p>
+        <div class="product-actions">
+          <button class="btn add-cart">Add to cart</button>
+          <button class="btn ghost buy-now">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" id="product-3" data-id="3" data-name="Cue ball" data-price="100">
+        <img src="c:\Users\IC\Downloads\6-Dotted-Pool-Cue-ball.png" alt="Cue ball">
+        <h3>Cue ball</h3>
+        <p class="price">P100</p>
+        <div class="product-actions">
+          <button class="btn add-cart">Add to cart</button>
+          <button class="btn ghost buy-now">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" id="product-4" data-id="4" data-name="Playing balls (set)" data-price="500">
+        <img src="c:\Users\IC\Downloads\balls.webp" alt="Playing balls">
+        <h3>Playing balls (set)</h3>
+        <p class="price">P500</p>
+        <div class="product-actions">
+          <button class="btn add-cart">Add to cart</button>
+          <button class="btn ghost buy-now">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" id="product-5" data-id="5" data-name="Triangle" data-price="100">
+        <img src="c:\Users\IC\Downloads\triangle.webp" alt="Triangle">
+        <h3>Triangle</h3>
+        <p class="price">P100</p>
+        <div class="product-actions">
+          <button class="btn add-cart">Add to cart</button>
+          <button class="btn ghost buy-now">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" id="product-6" data-id="6" data-name="Playing glove" data-price="250">
+        <img src="c:\Users\IC\Downloads\glove.jpg" alt="Playing glove">
+        <h3>Playing glove</h3>
+        <p class="price">P250</p>
+        <div class="product-actions">
+          <button class="btn add-cart">Add to cart</button>
+          <button class="btn ghost buy-now">Buy Now</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Huncho’s Pool Hub</p>
+      <p>Contact: <a href="tel:+26778177347">+267 78177347</a> • <a href="mailto:solololejwadilwe@gmail.com">solololejwadilwe@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Cart modal included (same as index) -->
+  <div id="cart-modal" class="cart-modal hidden" aria-hidden="true">
+    <div class="cart-panel">
+      <button id="cart-close" class="close">✕</button>
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <div>Total: <strong id="cart-total">P0</strong></div>
+        <div class="cart-actions">
+          <button id="checkout-wa" class="btn">Checkout (WhatsApp)</button>
+          <button id="clear-cart" class="btn ghost">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

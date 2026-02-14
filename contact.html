@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Huncho’s Pool Hub</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo-wrap"><svg width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><radialGradient id="g5" cx="35%" cy="30%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#000"/></radialGradient></defs><rect x="0" y="0" width="64" height="64" rx="10" fill="#0f6b3a"/><circle cx="32" cy="28" r="18" fill="url(#g5)"/><circle cx="32" cy="28" r="7" fill="#fff"/><text x="32" y="32" font-family="Verdana, Arial, sans-serif" font-size="7" font-weight="700" fill="#000" text-anchor="middle" alignment-baseline="middle">8</text></svg></span>
+        <span class="brand-text">Huncho’s Pool Hub</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.tml.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="active">Contact</a>
+        <button id="cart-btn" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <p>Phone / WhatsApp: <a href="tel:+26778177347">+267 78177347</a></p>
+    <p>Email: <a href="mailto:solololejwadilwe@gmail.com">solololejwadilwe@gmail.com</a></p>
+
+    <h2>Send us a message</h2>
+    <!-- Simple mailto contact form (opens user's email client) -->
+    <form id="email-form" action="mailto:solololejwadilwe@gmail.com" method="GET" enctype="text/plain" onsubmit="return prepareMail();">
+      <label>
+        Your name
+        <input type="text" id="sender-name" required />
+      </label>
+      <label>
+        Your email
+        <input type="email" id="sender-email" required />
+      </label>
+      <label>
+        Message
+        <textarea id="sender-msg" rows="6" required></textarea>
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="btn">Send Email</button>
+      </div>
+    </form>
+    <p class="muted">Or message us directly on WhatsApp: <a href="https://wa.me/26778177347" target="_blank" rel="noopener">+267 78177347</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Huncho’s Pool Hub</p>
+    </div>
+  </footer>
+
+</body>
+</html>
